@@ -4,8 +4,8 @@ import (
 	"runtime"
 	"time"
 
-	"leaf/conf"
-	"leaf/log"
+	"github.com/cjzswang5/leaf/conf"
+	"github.com/cjzswang5/leaf/log"
 )
 
 // one dispatcher per goroutine (goroutine not safe)

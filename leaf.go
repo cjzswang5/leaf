@@ -4,11 +4,11 @@ import (
 	"os"
 	"os/signal"
 
-	"leaf/cluster"
-	"leaf/conf"
-	"leaf/console"
-	"leaf/log"
-	"leaf/module"
+	"github.com/cjzswang5/leaf/cluster"
+	"github.com/cjzswang5/leaf/conf"
+	"github.com/cjzswang5/leaf/console"
+	"github.com/cjzswang5/leaf/log"
+	"github.com/cjzswang5/leaf/module"
 )
 
 func Run(mods ...module.Module) {

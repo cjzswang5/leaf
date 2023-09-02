@@ -4,8 +4,8 @@ import (
 	"runtime"
 	"sync"
 
-	"leaf/conf"
-	"leaf/log"
+	"github.com/cjzswang5/leaf/conf"
+	"github.com/cjzswang5/leaf/log"
 )
 
 type Module interface {

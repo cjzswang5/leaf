@@ -3,7 +3,7 @@ package log_test
 import (
 	l "log"
 
-	"leaf/log"
+	"github.com/cjzswang5/leaf/log"
 )
 
 func Example() {

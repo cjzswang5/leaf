@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"leaf/timer"
+	"github.com/cjzswang5/leaf/timer"
 )
 
 func ExampleTimer() {

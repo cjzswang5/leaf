@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"leaf/log"
+	"github.com/cjzswang5/leaf/log"
 
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"

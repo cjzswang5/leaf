@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"leaf/conf"
-	"leaf/log"
+	"github.com/cjzswang5/leaf/conf"
+	"github.com/cjzswang5/leaf/log"
 )
 
 // one server per goroutine (goroutine not safe)

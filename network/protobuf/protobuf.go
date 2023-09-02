@@ -7,8 +7,8 @@ import (
 	"math"
 	"reflect"
 
-	"leaf/chanrpc"
-	"leaf/log"
+	"github.com/cjzswang5/leaf/chanrpc"
+	"github.com/cjzswang5/leaf/log"
 
 	"github.com/golang/protobuf/proto"
 )
