@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"io"
 	"math"
+
+	"github.com/cjzswang5/leaf/log"
 )
 
 // --------------
@@ -91,6 +93,7 @@ func (p *MsgParser) Read(conn *TCPConn) ([]byte, error) {
 		}
 	}
 
+	log.Debug("Read msgLen=%v", msgLen)
 	// check len
 	if msgLen > p.maxMsgLen {
 		return nil, fmt.Errorf("message too long msgLen=%v maxMsgLen=%v", msgLen, p.maxMsgLen)
