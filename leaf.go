@@ -1,13 +1,14 @@
 package leaf
 
 import (
-	"github.com/name5566/leaf/cluster"
-	"github.com/name5566/leaf/conf"
-	"github.com/name5566/leaf/console"
-	"github.com/name5566/leaf/log"
-	"github.com/name5566/leaf/module"
 	"os"
 	"os/signal"
+
+	"leaf/cluster"
+	"leaf/conf"
+	"leaf/console"
+	"leaf/log"
+	"leaf/module"
 )
 
 func Run(mods ...module.Module) {
