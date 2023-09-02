@@ -3,6 +3,7 @@ package network
 import (
 	"encoding/binary"
 	"errors"
+	"fmt"
 	"io"
 	"math"
 )
@@ -92,7 +93,7 @@ func (p *MsgParser) Read(conn *TCPConn) ([]byte, error) {
 
 	// check len
 	if msgLen > p.maxMsgLen {
-		return nil, errors.New("message too long")
+		return nil, fmt.Errorf("message too long msgLen=%v maxMsgLen=%v", msgLen, p.maxMsgLen)
 	} else if msgLen < p.minMsgLen {
 		return nil, errors.New("message too short")
 	}
@@ -116,7 +117,7 @@ func (p *MsgParser) Write(conn *TCPConn, args ...[]byte) error {
 
 	// check len
 	if msgLen > p.maxMsgLen {
-		return errors.New("message too long")
+		return fmt.Errorf("message too long msgLen=%v maxMsgLen=%v", msgLen, p.maxMsgLen)
 	} else if msgLen < p.minMsgLen {
 		return errors.New("message too short")
 	}
